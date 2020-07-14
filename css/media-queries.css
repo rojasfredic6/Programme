@@ -1051,6 +1051,9 @@ main{
 	.main-section-grups-4 div:nth-child(1) picture img{
 		width: 483px;
 	}
+	.main-section-grups-4 div:nth-child(7){
+		border-bottom: 2px solid #444444;
+	}
 	
 	.main-section-grups-4 div:nth-child(8){
 		border-right: 0;
