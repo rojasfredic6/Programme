@@ -145,11 +145,18 @@ header nav ul li img{
 
 .main{
 	display: grid;
-	grid-template-columns: 1;
-	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "main-section-1"
+						 "main-section-2"
+						 "main-section-3"
+						 "main-section-4";
 }
 
-.main-section {
+.main-section-1,
+.main-section-2,
+.main-section-3,
+.main-section-4 {
 	grid-column: span 1;
 	height: 600px;
 	display: grid;
@@ -184,15 +191,15 @@ header nav ul li img{
 .main-section-grups div:nth-child(2),
 .main-section-grups div:nth-child(5),
 .main-section-grups div:nth-child(6){
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid #444444;
 }
 .main-section-grups div:nth-child(4){
 	grid-column: 2/4;
 	grid-row: 1/4;
 	display:flex;
 	flex-direction: column;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	border-left: 3px solid #444444;
+	border-right: 3px solid #444444;
 }
 .main-section-grups div:nth-child(4) p{
 	margin: 10px 25px;
@@ -215,7 +222,7 @@ header nav ul li img{
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	border-left: 1px solid white;
+	border-left: 3px solid #444444;
 }
 .main-section-grups div:nth-child(8) p{
 	margin: 10px 25px;
@@ -248,7 +255,7 @@ header nav ul li img{
 .main-section-grups-2 div:nth-child(3),
 .main-section-grups-2 div:nth-child(6),
 .main-section-grups-2 div:nth-child(7){
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid #444444;
 }
 
 .main-section-grups-2 div:nth-child(1){
@@ -256,7 +263,7 @@ header nav ul li img{
 	grid-row: 1/4;
 	display:flex;
 	flex-direction: column;
-	border-right: 1px solid white;
+	border-right: 3px solid #444444;
 }
 
 .main-section-grups-2 div:nth-child(1) picture{
@@ -280,8 +287,8 @@ header nav ul li img{
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	border-left: 3px solid #444444;
+	border-right: 3px solid #444444;
 }
 
 .main-section-grups-2 div:nth-child(5) picture{
@@ -315,7 +322,7 @@ header nav ul li img{
 .main-section-grups-2 div:nth-child(3),
 .main-section-grups-2 div:nth-child(6),
 .main-section-grups-2 div:nth-child(7){
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid #444444;
 }
 
 .main-section-grups-3 div:nth-child(4){
@@ -323,8 +330,8 @@ header nav ul li img{
 	grid-row: 1/4;
 	display:flex;
 	flex-direction: column;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	border-left: 3px solid #444444;
+	border-right: 3px solid #444444;
 }
 
 .main-section-grups-3 div:nth-child(4) p{
@@ -348,7 +355,7 @@ header nav ul li img{
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	border-right: 1px solid white;
+	border-right: 3px solid #444444;
 }
 
 .main-section-grups-3 div:nth-child(5) p{
@@ -379,11 +386,11 @@ header nav ul li img{
 	grid-gap: 5px;
 }
 
-.main-section-grups-3 div:nth-child(1),
-.main-section-grups-3 div:nth-child(2),
-.main-section-grups-3 div:nth-child(6),
-.main-section-grups-3 div:nth-child(7){
-	border-bottom: 1px solid white;
+.main-section-grups-4 div:nth-child(2),
+.main-section-grups-4 div:nth-child(3),
+.main-section-grups-4 div:nth-child(5),
+.main-section-grups-4 div:nth-child(6){
+	border-bottom: 3px solid #444444;
 }
 
 
@@ -392,7 +399,13 @@ header nav ul li img{
 	grid-row: 1/4;
 	display:flex;
 	flex-direction: column;
+	border-right: 3px solid #444444;
 }
+
+.main-section-grups-4 div:nth-child(1) p{
+	margin: 10px 25px;
+}
+
 
 .main-section-grups-4 div:nth-child(1) picture{
 	align-self: center;
@@ -411,7 +424,13 @@ header nav ul li img{
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	border-left: 3px solid #444444;
 }
+
+.main-section-grups-4 div:nth-child(8) p{
+	margin: 10px 25px;
+}
+
 
 .main-section-grups-4 div:nth-child(8) picture{
 	align-self: center;
